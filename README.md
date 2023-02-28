@@ -159,8 +159,8 @@ def call_model(request):
     request_body = request["body"]
     instance_prompt = request_body.get("instance_prompt")
     run_id = request_body.get("run_id")
-    run = get_run(run_id)[0]
-    model = StableDiffusionPipeline(model_id=run["model_id"])
+    run = FinetuningRun(run_id)
+    model = StableDiffusionPipeline(model_id=run.deployed_model._model_id)
     image, url = model(instance_prompt)
     return {
         "url": url

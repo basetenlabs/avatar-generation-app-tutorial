@@ -55,7 +55,7 @@ First set up a Supabase bucket for storing data. You can follow the [great guide
 Next, create a new table in Supabase called `finetuningruns`. We'll be using this table to link users with fine tuning runs created through Blueprint. For this purpose of this demo, disable Row-Level-Security. This table only needs a few columns:
 * [`run_id` (_varchar_)](https://github.com/tuhins/fine-tuning-app/blob/01993e44996d152cae92fce5d2475a110079b0b9/images/run_id.png)
 * [`user_id` (linked to users table, join on `id`)](https://github.com/tuhins/fine-tuning-app/blob/01993e44996d152cae92fce5d2475a110079b0b9/images/user_id.png)
-* [`dataset` (_varchar_)](https://github.com/tuhins/fine-tuning-app/blob/01993e44996d152cae92fce5d2475a110079b0b9/images/dataset.png)
+* [`dataset` (_text_)](https://github.com/tuhins/fine-tuning-app/blob/01993e44996d152cae92fce5d2475a110079b0b9/images/dataset.png)
 
 ### Fine tuning routes
 

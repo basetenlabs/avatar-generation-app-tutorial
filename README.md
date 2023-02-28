@@ -53,7 +53,7 @@ We're using Supabase storage to collect files from users which we zip up, upload
 First set up a Supabase bucket for storing data. You can follow the [great guide from Supabase](https://supabase.com/docs/guides/storage/quickstart#create-a-bucket) to get started (call it something like `fine-tuning-bucket`; if you call it something else you'll have to update the [`index.tsx`](https://github.com/tuhins/fine-tuning-app/blob/559546ad6b5d39d68433d12ee5bc7e5cc9149a3a/src/pages/index.tsx#L15)). Make sure that the bucket is marked as **public** and set the policy as **open for reading, writing, deleting and updating** data; [here](https://github.com/tuhins/fine-tuning-app/blob/01993e44996d152cae92fce5d2475a110079b0b9/images/policy.png) is what your policy should look like. The bulk of the work here is done by the [upload handler](https://github.com/tuhins/fine-tuning-app/blob/main/src/pages/index.tsx#L89-L122), which collects images from the user via an input component, zips them up and uploads the blob to Supabase. Supabase provides a publicly accessible URL to pass through to the Blueprint API.
 
 Next, create a new table in Supabase called `finetuningruns`. We'll be using this table to link users with fine tuning runs created through Blueprint. For this purpose of this demo, **disable Row-Level-Security**. This table only needs a few columns:
-* `user_id` (linked to users table, join on `id`)[see screenshot](https://github.com/tuhins/fine-tuning-app/blob/01993e44996d152cae92fce5d2475a110079b0b9/images/user_id.png)
+* `user_id` (linked to users table, join on `id`) [see screenshot](https://github.com/basetenlabs/avatar-generation-app-tutorial/blob/main/images/user_id.png?raw=true)
 * `run_id` (_varchar_)
 * `dataset` (_text_)
 

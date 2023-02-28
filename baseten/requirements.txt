@@ -1,2 +1,2 @@
-baseten==0.4.1
+baseten==0.4.2
 supabase

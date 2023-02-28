@@ -173,6 +173,8 @@ Lastly, we'll write some front-end to take some user input, and upon clicking a 
 
 Sign up and/or login at `http://localhost:3000/login`, and get started!
 
+![screenshot-lensa-app](https://user-images.githubusercontent.com/1175506/221830683-fb6113f5-7d51-4c98-8c27-d610f5b2b0bb.png)
+
 ## Hosting the model on Vercel
 
 This was a simple NextJS app that can be hosted on Vercel. Follow [Vercel's NextJS tutorial](https://vercel.com/docs/frameworks/nextjs) to get started.

@@ -92,7 +92,7 @@ def call_model(request):
   run_id = request_body.get("run_id")
   run = FinetuningRun(run_id)
   model = run.deployed_model
-  _, url = model(instance_prompt)
+  image, url = model(instance_prompt)
   return {
     "url": url
   }

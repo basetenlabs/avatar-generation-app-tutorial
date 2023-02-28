@@ -1,0 +1,195 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  font-family: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+  'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+  'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  border-bottom: 1px solid #eee;
+}
+
+.main {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #eee;;
+}
+
+.loginpage {
+  align-items: center;
+  border-bottom: 0px solid #eee;
+}
+
+.button {
+  padding: 4px 8px;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: 0.5s;
+  background-size: 200% auto;
+  width: 100px;
+  margin-top: 16px;
+  pointer-events: inherit;
+  cursor: pointer;
+}
+
+.finetuningsection {
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  display: flex;
+}
+
+.loginbutton {
+  width: 250px;
+  margin-top: 16px;
+  opacity: 1;
+  pointer-events: inherit;
+}
+
+.inactive {
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.hidden {
+  display: none;
+}
+
+.step {
+  margin-bottom: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.columnstep {
+  margin-bottom: 0;
+  flex-direction: column;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: black;
+  background: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  opacity: 0.8;
+}
+
+.stepheading {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.complete {
+  color: #89d489;
+  pointer-events: none;
+}
+
+.complete > .icon {
+  opacity: 0.2;
+  background:  #89d489;
+}
+
+.ineligible {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.input {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  width: 300px;
+  margin-top: 8px;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.promptinput {
+  margin-top: 0;
+}
+
+.logininput {
+  margin: 0;
+  width: 250px;
+}
+
+.primary {
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+
+.primary:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.image {
+  width: 390px;
+  border: 1px solid #eee;
+  margin-top: 8px;
+  border-radius: 6px;
+}
+
+.modeloutput {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.clear {
+  margin: auto;
+  width: 150px;
+  text-align: center;
+}
+
+.reset {
+  background: white;
+  color: black;
+  margin-top: 0;
+}
+
+
+.failed {
+  color: red;
+}
+
+.blinker {
+  animation: blinker 3s linear infinite;
+}
+
+#files {
+  display: none;
+}
+
+.instance {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  margin-top: 16px;
+}
+
+.loginmessage {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.25;
+  }
+}

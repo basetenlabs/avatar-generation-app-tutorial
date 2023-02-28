@@ -145,7 +145,7 @@ def model_status(request):
         return { "healthy": False, "model_id": None }
     run = FinetuningRun(id=run_id)
     run.refresh()
-    model = run.deployed_model
+    model = run.deployed_model.baseten_model
     return {
         "healthy": model.status == "MODEL_READY" if model else False,
         "model_id": model.id if model else None
@@ -162,7 +162,7 @@ def call_model(request):
     instance_prompt = request_body.get("instance_prompt")
     run_id = request_body.get("run_id")
     run = FinetuningRun(run_id)
-    model = StableDiffusionPipeline(model_id=run.deployed_model.id)
+    model = run.deployed_model
     image, url = model(instance_prompt)
     return {
         "url": url

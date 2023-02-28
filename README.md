@@ -6,6 +6,8 @@
 
 Blueprint works great for building user-facing applications with fine-tuned models. One popular type of app using fine-tuning is AI avatar generation apps. This project implements a simple version of an avatar generation app like Lensa using Blueprint.
 
+![screenshot-lensa-app](https://user-images.githubusercontent.com/1175506/221830683-fb6113f5-7d51-4c98-8c27-d610f5b2b0bb.png)
+
 This repo contains:
 
 * A tutorial on building your own avatar generation application

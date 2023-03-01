@@ -72,7 +72,7 @@ def fine_tune_model(request):
         instance_prompt=instance_prompt,
         input_dataset=dataset,
         train_text_encoder=False,
-        max_train_steps=20
+        max_train_steps=1300
     )
     run = FinetuningRun.create(
         trained_model_name=name_of_model,

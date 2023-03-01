@@ -2,7 +2,7 @@
 
 ## Background
 
-[Blueprint](https://blueprint.baseten.co) is a fine-tuning and serving infrastructure platform for software developers who are comfortable with backend and frontend engineering but lack expertise in model development and hosting.
+[Blueprint](https://blueprint.baseten.co) is a fine-tuning and serving infrastructure toolkit for software developers who are comfortable with backend and frontend engineering but lack expertise in model development and hosting.
 
 Blueprint works great for building user-facing applications with fine-tuned models. One popular type of app using fine-tuning is AI avatar generation apps. This project implements a simple version of an avatar generation app like Lensa using Blueprint.
 

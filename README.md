@@ -145,7 +145,7 @@ def model_status(request):
         return { "healthy": False, "model_id": None }
     run = FinetuningRun(id=run_id)
     run.refresh()
-    model = run.deployed_model.baseten_model
+    model = run.deployed_model
     return {
         "healthy": model.status == "MODEL_READY" if model else False,
         "model_id": model.id if model else None
